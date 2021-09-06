@@ -73,12 +73,16 @@
 
             <h2 class="titulosSecundarios textoCentrado wow animate__animated animate__fadeInUp" data-wow-duration="10s">Envianos tu consulta</h2>
 
-            <form action="#" class="botones">
-
-             <input type="text" name="celular" placeholder="Teléfono" class="bordesRedon2"><br>
-             <input type="text" name="nombre" placeholder="Nombre" class="bordesRedon2"><br>
-             <input type="email" name="email" placeholder="E-mail" class="bordesRedon2"><br>
-             <input type="text" name="motivo" placeholder="Motivo de Consulta" class="bordesRedon2"><br> 
+            
+             <form method="POST" action="enviar2.php"  class="botones">
+             <label for="celular-usuario">Celular</label>
+             <input type="text" name="celular" id="celular-usuario" placeholder="Teléfono" class="bordesRedon2"><br>
+             <label for="nombre-usuario">Nombre</label>
+             <input type="text" name="nombre" id="nombre-usuario" placeholder="Nombre" class="bordesRedon2"><br>
+             <label for="email-usuario">Email</label>
+             <input type="email" name="email" id="email-usuario" placeholder="E-mail" class="bordesRedon2"><br>
+             <label for="consulta-usuario">Consulta</label>
+             <input type="text" name="motivo" id="consulta-usuario" placeholder="Motivo de Consulta" class="bordesRedon2"><br> 
              <div class="boton centrarItems botones__contacto">       
              <input type="reset" name="reset" value="Borrar todo" class="btn btn-outline-light botones__contacto marginBott1">
              <input type="submit" name="enviar" value="Enviar" class="btn btn-outline-light botones__contacto marginBott1">
